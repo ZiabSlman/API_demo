@@ -1,0 +1,4 @@
+id,first_name,last_name,email,faculty,field_of_study,active_semesters,grade_average
+1,Slman,Ziab,ss@test.com,Informatics,Computer Science,4,4.73
+2,Rabih,smart,rr@test.com,literature ,English literature,6,4.33
+3,Mario,Zd,mm@test.com,Economics,Economic Science,3,4.4
