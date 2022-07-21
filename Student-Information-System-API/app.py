@@ -1,14 +1,14 @@
 from flask import Flask, jsonify
 import os
 from flask_sqlalchemy import SQLAlchemy
-import model
+import seeds
+from extensions import db, app
 
 database_dir = os.path.abspath(os.path.dirname(__file__))
-app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + database_dir
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(database_dir + 'Information-System.db')
 app.config['DEBUG'] = True
 
-db = SQLAlchemy(app)
+db.init_app(app)
 
 
 @app.route('/')

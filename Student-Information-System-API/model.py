@@ -1,6 +1,6 @@
-from app import db
+from extensions import db
 from sqlalchemy import String, Column, PrimaryKeyConstraint, Integer, Float
-import os
+
 
 class Users(db.Model):
     id = Column(Integer, primary_key=True)
